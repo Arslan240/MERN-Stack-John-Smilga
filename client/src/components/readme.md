@@ -1,0 +1,1 @@
+In components we have index.js because we will import all the components in that folder and then named export them so that we can easily import them in our react application without having to write long paths every time.
