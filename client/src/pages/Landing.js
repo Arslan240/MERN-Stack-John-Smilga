@@ -1,13 +1,15 @@
 import React from 'react'
-import logo from '../assets/images/logo.svg'
+import { Link } from 'react-router-dom'
 import main from '../assets/images/main.svg'
 import Wrapper from '../assets/wrappers/LandingPage'
+import { Logo } from '../components'
+
 
 const Landing = props => {
   return (
     <Wrapper>
       <nav>
-        <img src={logo} alt='jobify' className='logo'/>
+        <Logo/>
       </nav>
       {/* info */}
       <div className="container page">
@@ -16,9 +18,9 @@ const Landing = props => {
           <p>
           I'm baby neutra pok pok shabby chic roof party selfies green juice hashtag. Kale chips kitsch selvage, jianbing tousled offal tilde. Coloring book taiyaki roof party lo-fi. Leggings cred snackwave venmo pitchfork franzen irony twee semiotics chicharrones wolf farm-to-table craft beer everyday carry green juice
           </p>
-          <button className="btn btn-hero">
+          <Link to='/register' className="btn btn-hero">
             Login/Register
-          </button>
+          </Link>
         </div>
         <img src={main} alt="jon hunt" className='img main-img' />
       </div>
